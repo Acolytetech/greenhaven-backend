@@ -14,4 +14,4 @@ import { Testimonial } from "./Testimonial";
 import { Whychooseus } from "./whychooes";
 
 export const schemaTypes = [Navbar,Herosection,Whychooseus ,Testimonial,Subscriptiontext,Ourproducts,Subscription,Footer,
-    about,contactForm,fourthAbout,SecondAbout,thirdAbout,AllCategory]
+    about,contactForm,fourthAbout,SecondAbout,AllCategory]
