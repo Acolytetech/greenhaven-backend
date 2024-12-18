@@ -46,6 +46,12 @@ export const Navbar = defineType({
               type: "url",
               description: "URL for this menu item.",
             }),
+            defineField({
+              name: "path",
+              title: "Path",
+              type: "string",
+              description: "path for this menu page .",
+            }),
             // Dropdown items (nested under the menu item)
             defineField({
               name: "dropdownItems",
@@ -66,6 +72,12 @@ export const Navbar = defineType({
                       title: "Link",
                       type: "string",
                       description: "URL for the dropdown item.",
+                    }), 
+                     defineField({
+                      name: "path",
+                      title: "Path",
+                      type: "string",
+                      description: "path for this menu page .",
                     }),
                     // Sub-dropdown items (nested under the dropdown item)
                     defineField({
@@ -87,6 +99,12 @@ export const Navbar = defineType({
                               title: "Link",
                               type: "url",
                               description: "URL for the sub-dropdown item.",
+                            }),
+                            defineField({
+                              name: "path",
+                              title: "Path",
+                              type: "string",
+                              description: "path for this menu page .",
                             }),
                           ],
                         },
