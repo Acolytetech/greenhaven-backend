@@ -1,18 +1,18 @@
 import {defineType} from 'sanity'
 
-export const AllCategory = defineType({
-  name: 'categories',
-  title: 'Categories',
+export const ProductList = defineType({
+  name: 'product_list',
+  title: 'Product List',
   type: 'document',
   fields: [
     {
-      name: 'header',
-      title: 'Header',
+      name: 'category_name',
+      title: 'Category Name',
       type: 'string',
     },
     {
-      name: 'sub_header',
-      title: 'Sub Header',
+      name: 'id',
+      title: 'ID',
       type: 'string',
     },
     {
@@ -36,11 +36,6 @@ export const AllCategory = defineType({
             {
               name: 'path',
               title: 'Path',
-              type: 'string',
-            },
-            {
-              name: 'id',
-              title: 'ID',
               type: 'string',
             },
           ],
