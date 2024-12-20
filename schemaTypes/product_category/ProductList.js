@@ -34,8 +34,8 @@ export const ProductList = defineType({
               type: 'image',
             },
             {
-              name: 'path',
-              title: 'Path',
+              name: 'sku',
+              title: 'SKU',
               type: 'string',
             },
           ],
