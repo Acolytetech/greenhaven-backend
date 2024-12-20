@@ -15,7 +15,7 @@ export const Herosection = defineType({
       name: "headline",
       title: "Headline",
       type: "array",
-      of: [{ type:"block" }],
+      of: [{ type:"text" }],
       description: "Main headline text for the hero section.",
     //   validation: (Rule) => Rule.required().min(10).max(80),
     }),
