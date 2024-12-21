@@ -23,7 +23,19 @@ export const ProductDetail = defineType({
     {
       name: 'dimension_text',
       title: 'Dimension Text',
-      type: 'string',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {
+              name: 'dimension_field',
+              title: 'Dimension Field',
+              type: 'string',
+            },
+          ],
+        },
+      ],
     },
     {
       name: 'description_text',
