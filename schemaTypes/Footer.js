@@ -49,6 +49,12 @@ export const Footer = defineType({
                 type: 'url',
                 title: 'Link URL',
               },
+              defineField({
+                name: "path",
+                title: "Path",
+                type: "string",
+                description: "path for this menu page .",
+              }),
             ],
           },
         ],

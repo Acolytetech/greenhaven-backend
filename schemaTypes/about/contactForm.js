@@ -11,6 +11,13 @@ export default {
       validation: (Rule) => Rule.required().min(2).max(50),
     },
     {
+      name: 'mobileNumber',
+      title: 'Mobile Number',
+      type: 'string',
+      validation: (Rule) => Rule.required().min(10).max(15),
+      
+    },
+    {
       name: 'email',
       title: 'Email',
       type: 'string',
