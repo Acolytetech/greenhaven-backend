@@ -9,7 +9,8 @@ export const Herosection = defineType({
     {
       name: 'caraousel_title',
       title: 'Caraousel Title',
-      type: 'string'
+      type: 'array',
+      of: [{ type: "block" }]
     },
     {
       name: 'caraousel_subtitle',
