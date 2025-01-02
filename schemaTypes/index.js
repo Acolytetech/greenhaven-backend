@@ -4,6 +4,7 @@ import fourthAbout from "./about/fourthAbout";
 import SecondAbout from "./about/SecondAbout";
 // import thirdAbout from "./about/thirdAbout";
 import { Footer } from "./Footer";
+import Getquoteresponse from "./Getquoteresponse";
 import { Herosection } from "./Herosection";
 import { Navbar } from "./Navbar";
 import { Ourproducts } from "./Ourproducts";
@@ -17,4 +18,4 @@ import { Testimonial } from "./Testimonial";
 import { Whychooseus } from "./whychooes";
 
 export const schemaTypes = [Navbar,Herosection,Whychooseus ,Testimonial,Subscriptiontext,Ourproducts,Subscription,Footer,
-    about,contactForm,fourthAbout,SecondAbout,AllCategory,ProductList,ProductDetail,Instagrampost]
+    about,contactForm, Getquoteresponse ,fourthAbout,SecondAbout,AllCategory,ProductList,ProductDetail,Instagrampost]
