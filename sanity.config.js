@@ -4,11 +4,11 @@ import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
-  name: 'default',
-  title: 'greenheven-backend',
+  name: process.env.SANITY_STUDIO_NAME,
+  title: process.env.SANITY_STUDIO_TITLE,
 
-  projectId: 'o6i5j6ls',
-  dataset: 'production',
+  projectId: process.env.SANITY_STUDIO_PROJECTID,
+  dataset: process.env.SANITY_STUDIO_DATASET,
 
   plugins: [structureTool(), visionTool()],
 
