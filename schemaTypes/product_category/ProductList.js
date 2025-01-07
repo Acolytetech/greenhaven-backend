@@ -38,6 +38,21 @@ export const ProductList = defineType({
               title: 'SKU',
               type: 'string',
             },
+            {
+              name: 'price',
+              title: 'Price',
+              type: 'number',
+            },
+            {
+              name: 'color',
+              title: 'Color',
+              type: 'reference',
+              to: [{ type: 'product_detail' }],
+              options: {
+                filter: 'sku == $sku',
+                filterParams: { sku: '$sku' }
+              },
+            },
           ],
         },
       ],

@@ -1,4 +1,5 @@
 import {defineType} from 'sanity'
+import { filter } from 'sanity/migrate'
 
 export const ProductDetail = defineType({
   name: 'product_detail',
@@ -80,6 +81,16 @@ export const ProductDetail = defineType({
           ],
         },
       ],
+    },
+    {
+      name: 'price',
+      title: 'Price',
+      type: 'reference',
+      to: [{ type: 'product_list' }],
+      options: {
+        filter: 'sku == $sku',
+        filterParams: { sku: '$sku' }
+      },
     },
   ],
 })

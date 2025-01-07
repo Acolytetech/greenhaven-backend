@@ -1,5 +1,6 @@
+import { defineType } from "sanity"
 
-export default {
+export const GetQuoteResponse = defineType({
     name: 'getquoteresponse',
     title: 'Get Quote Response',
     type: 'document',
@@ -10,7 +11,6 @@ export default {
             type: 'string',
             validation: (Rule) => Rule.required().min(2).max(50),
         },
-      
         {
             name: 'email',
             title: 'Email',
@@ -22,13 +22,11 @@ export default {
             title: 'Mobile Number',
             type: 'string',
             validation: (Rule) => Rule.required().min(10).max(15),
-
         },    {
             name: 'productName',
             title: 'Product Name',
             type: 'string',
             validation: (Rule) => Rule.required(),
-
         },
         {
             name: 'subject',
@@ -50,8 +48,4 @@ export default {
         },
     ],
 
-
-
-
-
-};
+});
